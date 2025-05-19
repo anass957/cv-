@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.project {
+    text-align: center;
+}
+
+h2 {
+    background-color: rgb(5, 48, 48);
+    color: whitesmoke;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(98, 171, 180), rgba(0, 85, 76, 0.551));
+}

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.tp1 {
+    background-image: linear-gradient(to right, rgb(13, 63, 69), rgb(0, 178, 160));
+    border: solid 4px black;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 500px;
+}
+
+.tp2 {
+    background-image: linear-gradient(to right, rgb(13, 63, 69), rgb(0, 178, 160));
+    border: solid 4px black;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 500px;
+}
+
+.tp3 {
+    background-image: linear-gradient(to right, rgb(13, 63, 69), rgb(0, 178, 160));
+    border: solid 4px black;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 500px;
+}
+
+h2 {
+    background-color: rgb(5, 48, 48);
+    color: whitesmoke;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(98, 171, 180), rgba(0, 85, 76, 0.551));
+}

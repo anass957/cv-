@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C project</title>
+    <link rel="stylesheet" href="c-project.css">
+</head>
+
+<body>
+    <h2>calculateur de TTC :</h2>
+    <div class="tp1">
+        <pre>
+            #include   
+        
+            int main() {
+              
+                float prixht,nbarticle,tva,ttc;
+                
+                printf("=============> bonjour dans le calculator de TTC <=============\n\n\n");
+                
+                printf("veiller donner le prix hors taxe :\n");
+                scanf("%f",&prixht);
+                
+                printf("veiller donner le nombre d'article :\n");
+                scanf("%f",&nbarticle);
+                
+                printf("veiller donner le taux de tva :\n");
+                scanf("%f",&tva);
+                
+                ttc=prixht*(1+tva)*nbarticle;
+                
+                printf("le prix hors taxe :\n",prixht);
+                printf("le nombre d'article :\n",nbarticle);
+                printf("le taux de tva :\n",tva);
+                
+                printf("le prix avec ttc est :%.2f",ttc);
+                
+                return 0;
+            }</pre>
+    </div>
+
+    <h2>calculateur du remise :</h2>
+    <div class="tp2">
+        <pre>#include <stdio.h>
+
+            int main()
+            {
+                int prix,remise;
+                
+                printf("====>veiller ecrire votre montant :\n\n");
+                scanf("%d",&prix);
+            
+            
+               if (prix>=2000 && prix<5000) {
+                 remise = prix * 0.01;
+                } 
+               
+               else if (prix>=5000){
+                    remise = prix * 0.02; 
+               }
+            
+             printf("votre remise est: %d\n", remise);
+            printf("votre mantont apres remise est: %d\n", remise-prix);
+            
+                return 0;
+            
+            }
+            </pre>
+    </div>
+
+    <h2>calculateur du seconde</h2>
+    <div class="tp3">
+        <pre>#include <stdio.h>
+
+            int main() {
+            
+                int H1 , M1, S1 , H2, M2, S2;
+                int hs1,ms1,hs2,ms2;
+                int Ts1,Ts2,Ts22;
+                int ns,ns2;
+            
+                printf("ecrire la premier temp:\n");
+                scanf("%d %d %d",&H1,&M1,&S1);
+                
+                printf("ecrire le deuxieme temp :\n");
+                scanf("%d %d %d",&H2,&M2,&S2);
+                
+            printf("le premier temp est : %d :%d :%d \n",H1 , M1, S1);
+            printf("le deuxieme temp est : %d :%d :%d \n\n",H2 , M2, S2);
+            
+            
+             hs1=H1*3600;
+             ms1=M1*60;
+            
+             hs2=H2*3600;
+             ms2=M2*60;
+            
+                      Ts1=hs1+ms1+S1;
+                      Ts2=hs2+ms2+S2;
+                      
+                        ns= Ts2-Ts1;
+                        
+                        
+             if ( Ts2<Ts1) { 
+                 
+                 Ts22=Ts2+86400;
+                 ns2= Ts22-Ts1;
+                 
+                 printf(" ===> le nombre de seconde qui separent les deux temps est :%d",ns2);
+             }
+                else{
+                        
+            printf(" ===> le nombre de seconde qui separent les deux temps est :%d",ns);  }      
+            
+                return 0;
+            }
+            </pre>
+    </div>
+
+
+</body>
+
+</html>
